@@ -104,7 +104,7 @@ This figure shows the DC motor input waveform observed on the oscilloscope at 80
 The Arduino source code is stored in:
 
 ```text
-src/dc_motor_speed_control_pwm.ino
+dc_motor_speed_control_pwm_reconstructed.ino
 ```
 
 ## **Working Principle**
