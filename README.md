@@ -54,7 +54,7 @@ The potentiometer is used as an analogy for a temperature sensor. By changing th
 
 ### **Figure 1: Experimental Connection of DC Motor**
 
-![Figure 1: Experimental Connection of DC Motor](assets/dc-motor-connection/experimental_connection_dc_motor.png)
+![Figure 1: Experimental Connection of DC Motor](experimental_connection_dc_motor.png)
 
 **Description:**
 This figure shows the experimental DC motor connection used in the laboratory setup.
@@ -63,14 +63,14 @@ This figure shows the experimental DC motor connection used in the laboratory se
 
 ### **Figure 2: Upper Layer View of Driver Circuit**
 
-![Figure 2: Upper Layer View of Driver Circuit](assets/driver-circuit/driver_circuit_upper_layer.png)
+![Figure 2: Upper Layer View of Driver Circuit](driver_circuit_upper_layer.png)
 
 **Description:**
 This figure shows the upper layer of the driver circuit used to control the DC motor input signal.
 
 ### **Figure 3: Lower Layer View of Driver Circuit**
 
-![Figure 3: Lower Layer View of Driver Circuit](assets/driver-circuit/driver_circuit_lower_layer.png)
+![Figure 3: Lower Layer View of Driver Circuit](driver_circuit_lower_layer.png)
 
 **Description:**
 This figure shows the lower layer of the driver circuit, including the soldered connections and PCB tracks.
@@ -79,7 +79,7 @@ This figure shows the lower layer of the driver circuit, including the soldered 
 
 ### **Figure 4: Experimental Setup of DC Motor Speed Control**
 
-![Figure 4: Experimental Setup of DC Motor Speed Control](assets/experimental-setup/dc_motor_speed_control_experimental_setup.png)
+![Figure 4: Experimental Setup of DC Motor Speed Control](dc_motor_experimental_setup.png)
 
 **Description:**
 This figure shows the complete experimental setup, including Arduino Uno, driver circuit, oscilloscope, centre-tapped transformer, measurement unit, and DC motor.
@@ -88,14 +88,14 @@ This figure shows the complete experimental setup, including Arduino Uno, driver
 
 ### **Figure 5: DC Motor Input at 100% Duty Cycle**
 
-![Figure 5: DC Motor Input at 100% Duty Cycle](assets/oscilloscope-observations/dc_motor_input_100_percent_duty_cycle.png)
+![Figure 5: DC Motor Input at 100% Duty Cycle](dc_motor_input_100_percent_duty_cycle.png)
 
 **Description:**
 This figure shows the DC motor input waveform observed on the oscilloscope at 100% duty cycle.
 
 ### **Figure 6: DC Motor Input at 80% Duty Cycle**
 
-![Figure 6: DC Motor Input at 80% Duty Cycle](assets/oscilloscope-observations/dc_motor_input_80_percent_duty_cycle.png)
+![Figure 6: DC Motor Input at 80% Duty Cycle](dc_motor_input_80_percent_duty_cycle.png)
 
 **Description:**
 This figure shows the DC motor input waveform observed on the oscilloscope at 80% duty cycle. The waveform confirms that the PWM signal changes according to duty cycle variation.
