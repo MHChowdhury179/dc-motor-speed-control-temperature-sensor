@@ -56,7 +56,6 @@ The potentiometer is used as an analogy for a temperature sensor. By changing th
 
 ![Figure 1: Experimental Connection of DC Motor](experimental_connection_dc_motor.png)
 
-**Description:**
 This figure shows the experimental DC motor connection used in the laboratory setup.
 
 ## **Driver Circuit**
@@ -65,14 +64,14 @@ This figure shows the experimental DC motor connection used in the laboratory se
 
 ![Figure 2: Upper Layer View of Driver Circuit](driver_circuit_upper_layer.png)
 
-**Description:**
+
 This figure shows the upper layer of the driver circuit used to control the DC motor input signal.
 
 ### **Figure 3: Lower Layer View of Driver Circuit**
 
 ![Figure 3: Lower Layer View of Driver Circuit](driver_circuit_lower_layer.png)
 
-**Description:**
+
 This figure shows the lower layer of the driver circuit, including the soldered connections and PCB tracks.
 
 ## **Experimental Setup**
@@ -81,23 +80,23 @@ This figure shows the lower layer of the driver circuit, including the soldered 
 
 ![Figure 4: Experimental Setup of DC Motor Speed Control](dc_motor_experimental_setup.png)
 
-**Description:**
+
 This figure shows the complete experimental setup, including Arduino Uno, driver circuit, oscilloscope, centre-tapped transformer, measurement unit, and DC motor.
 
 ## **Oscilloscope Observations**
 
 ### **Figure 5: DC Motor Input at 100% Duty Cycle**
 
-![Figure 5: DC Motor Input at 100% Duty Cycle](dc_motor_input_100_percent_duty_cycle.png)
+![Figure 5: DC Motor Input at 100% Duty Cycle](100_parcent.png)
 
-**Description:**
+
 This figure shows the DC motor input waveform observed on the oscilloscope at 100% duty cycle.
 
 ### **Figure 6: DC Motor Input at 80% Duty Cycle**
 
 ![Figure 6: DC Motor Input at 80% Duty Cycle](dc_motor_input_80_percent_duty_cycle.png)
 
-**Description:**
+
 This figure shows the DC motor input waveform observed on the oscilloscope at 80% duty cycle. The waveform confirms that the PWM signal changes according to duty cycle variation.
 
 ## **Arduino Code**
@@ -107,65 +106,6 @@ The Arduino source code is stored in:
 ```text
 src/dc_motor_speed_control_pwm.ino
 ```
-
-## **Sample Arduino Code**
-
-```cpp
-const int sensorPin = A0;
-const int motorPin = 9;
-
-int sensorValue = 0;
-int pwmValue = 0;
-
-void setup() {
-  Serial.begin(9600);
-  pinMode(motorPin, OUTPUT);
-}
-
-void loop() {
-  sensorValue = analogRead(sensorPin);
-
-  pwmValue = map(sensorValue, 0, 1023, 0, 255);
-
-  analogWrite(motorPin, pwmValue);
-
-  Serial.print("Sensor Value: ");
-  Serial.print(sensorValue);
-  Serial.print(" | PWM Value: ");
-  Serial.println(pwmValue);
-
-  delay(500);
-}
-```
-
-## **How to Run the Project**
-
-1. Open Arduino IDE.
-2. Connect the Arduino Uno board to the computer.
-3. Open the source file:
-
-```text
-src/dc_motor_speed_control_pwm.ino
-```
-
-4. Select the board:
-
-```text
-Tools > Board > Arduino Uno
-```
-
-5. Select the correct port:
-
-```text
-Tools > Port
-```
-
-6. Upload the code to the Arduino Uno.
-7. Connect the potentiometer to the Arduino analog input pin.
-8. Connect the PWM output pin to the motor driver circuit.
-9. Connect the driver circuit output to the DC motor.
-10. Rotate the potentiometer and observe the change in motor speed.
-11. Use the oscilloscope to observe the PWM waveform at different duty cycles.
 
 ## **Working Principle**
 
